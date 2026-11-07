@@ -1,0 +1,11 @@
+{{! A welcome email rendered by the CLI }}
+Hello {{name}},
+
+{{#items}}
+- {{.}}
+{{/items}}
+{{^items}}
+Your list is empty — add something!
+{{/items}}
+
+{{>footer}}
